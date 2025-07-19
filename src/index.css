@@ -1,6 +1,37 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
+
+.animate-jump{
+  animation: jump 3s ease-in-out 1;
+}
+  @keyframes jump {
+    0%{
+      transform: translateY(-20rem);
+    }
+    100%{
+      transform: translateY(0rem);
+    }
+    
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .animate-skills{
+    animation: skills 5s ease-in-out infinite;
+  }
+
+  @keyframes skills {
+    0%{
+      border-color: color-mix(in oklab, #3b5d74 20%, transparent);
+    }
+    50%{
+      border-color: #4a708a;
+    }
+    100%{
+      border-color: color-mix(in oklab, #3b5d74 20%, transparent);
+    }
+  }
