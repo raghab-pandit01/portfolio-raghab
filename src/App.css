@@ -1,4 +1,7 @@
-* {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+body {
+  font-family: "'Winky Rough', cursive";
+  display: flex;
+  background-color: #0f0f1a;
+  justify-content: center;
+  align-items: center;
 }
